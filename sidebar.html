@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Sidebar Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter", sans-serif;
+        }
+        
+        .inter{
+            font-family: "Inter", sans-serif;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        
+        .sidebar {
+            background-color: #7c0e00;
+            width: 250px;
+            height: 100vh;
+            display: flex; /* Ensures that items inside the sidebar are flex items */
+            flex-direction: column; /* Aligns children in a column */
+            justify-content: flex-start; /* Default behavior to start items from the top */
+            padding: 20px;
+            color: #fff;
+        }
+        
+        .profile-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+        
+        .profile-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        
+        .profile-info h3 {
+            font-size: 16px;
+            margin-bottom: 3px;
+        }
+        
+        .profile-info .user-email, .profile-info .user-id {
+            font-size: 12px;
+            color: #ccc;
+        }
+        
+        .menu-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .menu-section ul li {
+            margin: 15px 0;
+        }
+        
+        .menu-section ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+        }
+        
+        .menu-section ul li a img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        .logout-section {
+            margin-top: auto; /* This pushes the logout section to the bottom */
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+        
+        .logout-button {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logout-button img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        .logout-button:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="profile-section">
+            <img src="img/profile.png" alt="User Profile" class="profile-image">
+            <div class="profile-info">
+                <h3>User Name</h3>
+                <p class="user-email">User Webmail</p>
+                <p class="user-id">User ID</p>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <ul>
+                <li><a href="#"><img src="img/qna.png" alt="FAQ Icon"> FAQs</a></li>
+                <li><a href="#"><img src="img/rate.png" alt="Rate Icon"> Rate Us</a></li>
+                <li><a href="#"><img src="img/report.png" alt="Report Icon"> Report</a></li>
+                <li><a href="#"><img src="img/about.png" alt="About Icon"> About</a></li>
+            </ul>
+        </div>
+
+        <div class="logout-section">
+            <a href="#" class="logout-button">
+                <img src="img/logout.png" alt="Log Out Icon"> Log Out
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

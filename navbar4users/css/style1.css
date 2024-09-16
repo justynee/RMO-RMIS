@@ -1,0 +1,30 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.research-navbar{
+        background-color: #850000;
+        padding: 10px;
+        position: relative;
+        width: 100%;
+        top: 0;
+        z-index: 10000;
+        transition: all 0.3s ease;
+    
+}
+
+.burger-menu {
+    font-size: 24px; /* Adjust size as needed */
+    cursor: pointer;
+    display: none; /* Initially hidden */
+  }
+  
+  /* Example of showing burger menu for small screens */
+  @media (max-width: 768px) {
+    .burger-menu {
+      display: block;
+    }
+  }
+  
